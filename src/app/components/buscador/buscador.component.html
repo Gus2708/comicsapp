@@ -1,0 +1,13 @@
+<h1 class="title animated fadeIn">Buscando: <span>{{termino}}</span></h1>
+<hr>
+<div class="card-columns">
+    <div class="card cardStyle animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
+        <img [src]="heroe.img" class="card-img-top animated fadeIn slow" [alt]="heroe.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{heroe.nombre}}</h5>
+          <p class="card-text">{{heroe.bio}}</p>
+          <p class="card-text"><small class="text-muted">Aparicion: {{heroe.aparicion}}</small></p>
+          <button (click)="verHeroe(i)" class="btn btn-outline-primary btn-block">Ver mĂĄs...</button>
+       </div>
+    </div>
+</div>

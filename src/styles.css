@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  padding-bottom: 50px;
+}
+
+.jumbotron-style{
+    border-radius: 10px;
+    background: #f8f8f8a1;
+    color: #2f2f2f;
+}
+
+/*about*/
+.title{
+    margin-top: 20px;
+    padding: 10px;
+    color: #2f2f2f;
+    font-weight: 300;
+}
+
+.title span{
+  color: #2f2f2f8c;
+  font-size: 0.5em;
+}
+
+.parrafo{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.parrafo span{
+    font-weight: bold;
+}
+
+/*Animaciones*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .slow{
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  /* tarjetas*/
+  .cardStyle{
+    border: none;
+    box-shadow: .5px 1.5px 4px 0px#2f2f2f3a;
+    transition: box-shadow ease .3s;
+  }
+
+  .cardStyle:hover{
+    border: none;
+    box-shadow: .5px 1.5px 4px 0px#2f2f2f49;
+    transition: box-shadow ease .3s;
+  }
+
+  .cardStyle .card-title{
+    font-weight: 300;
+  }
+
+  /*navbar*/
+
+  .navbarStyle{
+    background: #f8f8f8a1;
+    box-shadow: 0px 0px 6px 4px #f8f8f8a1;
+  }
+
+  /* hero*/
+  .containerHero{
+    
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: .5px 1.5px 4px 0px#2f2f2f3a;
+  }
+
+  .containerHero img{
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .bio{
+    color: #2f2f2fd0;
+  }
+
+  .btn{
+    margin-top: 20px;
+    
+  }
+
+  .folder{
+    width: 120px;
+    position: relative;
+    bottom: 0;
+  }
+

@@ -8,8 +8,8 @@ import { HeroesService } from '../../services/heroes.service';
   templateUrl: './buscador.component.html'
 })
 export class BuscadorComponent implements OnInit {
-  heroes: any[] = []
-  termino:string
+  heroes: any[] = [];
+  termino: String;
 
   constructor(private _activatedroute:ActivatedRoute,
     private heroesservice:HeroesService,
@@ -20,7 +20,7 @@ export class BuscadorComponent implements OnInit {
       this.heroes = this.heroesservice.buscarHeroe(params['termino']);
       //console.log(this.heroes);
       this.termino = params['temino'];
-    })
+    });
   }
   verHeroe( idx:number ){
     this.router.navigate( ['/heroe',idx] );
